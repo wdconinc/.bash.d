@@ -1,0 +1,4 @@
+export DEBFULLNAME='Wouter Deconinck'
+export DEBEMAIL='wdconinc@gmail.com'
+
+export PBUILDFOLDER=/scratch/pbuilder

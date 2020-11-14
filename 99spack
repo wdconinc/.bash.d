@@ -1,0 +1,2 @@
+#export SPACK_ROOT=${HOME}/git/spack
+#source ${SPACK_ROOT}/share/spack/setup-env.sh

@@ -1,0 +1,16 @@
+echo ""
+echo "Screen sessions and windows:"
+echo ""
+screen -list | tee ~/.screen.`hostname -s`
+
+echo ""
+echo "Screen memo:"
+echo "  Create window: Ctrl-a c"
+echo "  Annotate window: Ctrl-a A"
+echo "  Detach from window: Ctrl-a d"
+echo "  Reattach to window: screen -r [-p ID]"
+echo "  Switch to window: Ctrl-a [0-9]"
+echo "  Kill window: Ctrl-a k"
+echo "  Multi-user mode: screen -x"
+echo ""
+

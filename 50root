@@ -1,0 +1,2 @@
+source root.sh
+export LD_LIBRARY_PATH=/usr/local/lib/root:${LD_LIBRARY_PATH}

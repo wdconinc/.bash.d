@@ -1,0 +1,2 @@
+export FLUPRO=/usr/local/fluka/pro/
+export FLUFOR=gfortran

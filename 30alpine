@@ -1,0 +1,1 @@
+alias alpine="alpine -p '{imap.gmail.com/ssl/user=wdconinc@gmail.com}Z/Helicity'"

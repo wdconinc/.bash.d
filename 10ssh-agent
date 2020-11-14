@@ -1,0 +1,23 @@
+SSH_AGENT="ssh-agent -s"
+SSH_ENV="$HOME/.ssh/environment-`hostname -s`"
+
+function start_agent {
+        echo -n "Initializing new SSH agent..."
+        ${SSH_AGENT} | sed 's/^echo/#echo/' > "${SSH_ENV}"
+        echo " succeeded"
+        chmod 600 "${SSH_ENV}"
+        . "${SSH_ENV}" > /dev/null
+        ssh-add;
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ] ; then
+        . "${SSH_ENV}" > /dev/null
+        ps -ef | grep ${SSH_AGENT_PID} | grep ${SSH_AGENT}$ > /dev/null || {
+                start_agent;
+        }
+else
+        start_agent;
+fi
+
