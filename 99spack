@@ -1,2 +1,3 @@
 #export SPACK_ROOT=${HOME}/git/spack
-#source ${SPACK_ROOT}/share/spack/setup-env.sh
+export SPACK_ROOT=/cvmfs/eic.opensciencegrid.org/packages/spack/current
+source ${SPACK_ROOT}/share/spack/setup-env.sh
